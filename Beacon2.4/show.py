@@ -3,7 +3,7 @@ from layer import Desktop
 import Messages_Declear as Messages_Declear
 dekstop = ["/Desktop","/desktop"]
 documents = ["/Docs", "/docs"]
-def show(directory, tag: str | None = ..., flag: str | None = ...):
+def show(directory, tag: str, *flags):
     try:
         if directory in dekstop:
             print(" ".join(Desktop))
