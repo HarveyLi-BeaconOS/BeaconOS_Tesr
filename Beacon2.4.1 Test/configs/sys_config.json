@@ -1,0 +1,7 @@
+{
+    "LANG": "en_us",
+    "SECURE_BOOT": true,
+    "SYS_PATH": "/ext_pkg/cmd",
+    "EXEC_PATH":"/executables",
+    "DEFUALT_QUOTE": true
+}
