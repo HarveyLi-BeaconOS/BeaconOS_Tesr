@@ -1,0 +1,2 @@
+from exc import *
+exc_info()
