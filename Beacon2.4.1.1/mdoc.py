@@ -1,0 +1,25 @@
+import Messages_Declear
+from pathlib import Path
+import os
+import gnureadline
+class mdoc:
+    def __init__(self,filename: str, tag: str):
+            path_to_file = str(Path(tag).absolute()) + "/" + filename
+            file = open(path_to_file,'w')
+            print("--------------- Started")
+            while True:
+                try:
+                    contents = str(input(f"|{filename} >> "))
+                    file.write(contents)
+                    file.write('\n')
+                except EOFError:
+                    print("|--------------- Saved")
+                    break
+                except KeyboardInterrupt:
+                    ...
+def mdoc_info():
+    print("mdoc: make a text document")
+    print("Command Syntax: mdoc [file name] [file tag]")
+    print("[file name]: name of the file, with extension name")
+    print("[file tag]: tag of the file: tpa, tpb, tpc. If empty, the file will be taged as others")
+    print("Use command `mkly` to make custom tags")
