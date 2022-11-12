@@ -1,7 +1,7 @@
 from pathlib import *
 
 class info:
-    def __init__(self,pkg_name:str, *flags: str) -> None:
+    def __init__(self,pkg_name:str) -> None:
         info.get(pkg_name=pkg_name)
         info.run()
 
